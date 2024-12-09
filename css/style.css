@@ -7,19 +7,6 @@
    --fuente_principal: "Lobster", sans-serif;
 
 
-
-
-
-
-   -agua: #48c9b0;
-    --blanco: #ffffff;
-    --amarillo:#f1c40f;
-    --primario: #FFC107;
-    --gris: #757575; 
-    --rosita:#f48fb1;
-    --moradito:#ba68c8 ;
-    --negro:#000000 ; 
-    --moraoscu: #B40486;
 }
 
 html {
@@ -35,9 +22,9 @@ html {
 body {
 
     background-image: linear-gradient(to top,var(--rosita),var(--cian) 100%);
-    background-image: linear-gradient(to top,#f89db4,#ffffff 100%);
     font-size:1.6rem;
     line-height: 1.5rem;
+    background-repeat: no-repeat;
 }
 
 
