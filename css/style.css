@@ -1,0 +1,47 @@
+:root{
+    --rosita:#ed22ee ;
+    --cian:  #2bcaa4;
+    --moradito: #bc52d0 ;
+   --blanco: #fff;
+   --negro: #000;
+   --fuente_principal: "Lobster", sans-serif;
+
+
+
+
+
+
+   -agua: #48c9b0;
+    --blanco: #ffffff;
+    --amarillo:#f1c40f;
+    --primario: #FFC107;
+    --gris: #757575; 
+    --rosita:#f48fb1;
+    --moradito:#ba68c8 ;
+    --negro:#000000 ; 
+    --moraoscu: #B40486;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+body {
+
+    background-image: linear-gradient(to top,var(--rosita),var(--cian) 100%);
+    background-image: linear-gradient(to top,#f89db4,#ffffff 100%);
+    font-size:1.6rem;
+    line-height: 1.5rem;
+}
+
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
