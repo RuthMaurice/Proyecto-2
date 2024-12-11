@@ -10,9 +10,10 @@
 }
 
 html {
-    box-sizing: border-box;
+    box-sizing: border-box; /*con estos comando cre un marco y escala, asi puedo tener todo 
+    a la misma esta 10px=1rem y todo en la misma caja*/
     font-size: 62.5%;
-    height: 100%;
+    /*height: 100%;  */
 }
 
 *, *:before, *:after{
@@ -73,7 +74,7 @@ h2 {
     justify-content: center;
 }
 .header__logo {
-    mar
+    
     gin: 3rem 0;
 }
 
@@ -103,20 +104,53 @@ h2 {
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: 2rem; /*disntamcia que sse deja entre flex*/
+  /*  gap: 2rem; /*disntamcia que sse deja entre flex en este caso entr las letras de los botonos d la frnaja*/
 }
 .navegacion__enlace{
     font-family: var(--fuente_principal);
     color: var(--blanco);
     font-size: 4rem;
+
+    margin-right: 2rem; /*para la separacion de los botones en la frnaja
+    lo que hace es separar los botone es horizontalmente por 2 rem*/
 }
+
+
+.navegacion__enlace:last-of-type{/* el comando laste... lo que hace es que toma el ultimo comando y le aplica el cambio*/
+    margin-right: 0;/*para la separacion de los botones en la frnaja
+    con este y el otro comando lo centro a los botones
+    este espeficicamnete no deja marguen y logra hacer que se centre*/
+}
+
+
+
+
+
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
     color: var(--negro);
 }
 
 
+.producto {
+
+}
+.producto__imagen {
+
+}
+
+.producto__informacion {
+
+}
+.producto__nombre {
+
+}
+.producto__precio {
+
+}
 
 
-
-
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
