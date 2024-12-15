@@ -141,10 +141,6 @@ h2 {
     width: 100%; /*para que la imagen tome el 100% del espacio*/
 
 }
-
-.producto__informacion {
-
-}
 .producto__nombre {
     font-size: 4rem;
 
@@ -165,15 +161,43 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
-    /*
-    column-gap: 2rem;
-    row-gap: 2rem;  */
+    grid-template-rows: repeat(2, 1fr);
 }
+
+@media (min-width: 768px){
+    .grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        /*
+        column-gap: 2rem;
+        row-gap: 2rem;  */
+    }
+}
+
+
  
 .grid__icono {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
+.nosotros__imagen  {
+    grid-row: 1 / 2;
+}
+
+
+@media (min-width: 768px){
+    .nosotros__imagen{
+        grid-column: 2 / 3;
+    }
+    
+}
+
+
+
+
+
+
+
+
