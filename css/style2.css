@@ -23,7 +23,8 @@ html {
 
 body {
 
-    background-image: linear-gradient(to top,var(--rosita),var(--cian) 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(130deg, rgba(2,0,36,1) 0%, rgba(78,9,121,1) 51%, rgba(0,212,255,1) 100%); 
     font-size:1.6rem;
     line-height: 1.5rem;
     background-repeat: no-repeat;
@@ -219,6 +220,7 @@ h2 {
 }
 .texto__icono {
     line-height: 1;
+    text-align: center;
 }
 .bloque__icono {
     display: flex;

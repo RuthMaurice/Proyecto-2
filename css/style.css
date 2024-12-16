@@ -23,9 +23,10 @@ html {
 
 body {
 
-    background-image: linear-gradient(to top,var(--rosita),var(--cian) 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(110deg, rgba(2,0,36,1) 0%, rgba(78,9,121,1) 51%, rgba(0,212,255,1) 100%); 
     font-size:1.6rem;
-    line-height: 1.5rem;
+    line-height: 1.5rem; /*para que se lea mejor el texto*/
     background-repeat: no-repeat;
     font-family: var(--fuente_principal);
 }
@@ -40,7 +41,7 @@ p{
     text-decoration: none;
  }
  img {
-    max-width: 100%
+    width: 100%;
  }
 
 
@@ -136,15 +137,22 @@ h2 {
     background-color: var(--moradito);
     padding: 1rem;
 
+
+}
+.producto:hover{
+    margin: -1rem;
+    zoom: 110%;
+    transition: 0.3s;
+    border-radius:1.5rem;
+}
+.producto__imagen:hover {
+    border-radius:1.5rem;
 }
 .producto__imagen {
     width: 100%; /*para que la imagen tome el 100% del espacio*/
 
 }
 
-.producto__informacion {
-
-}
 .producto__nombre {
     font-size: 4rem;
 
@@ -216,21 +224,93 @@ h2 {
 
 
 
+.camisa__imagen:hover{
+    -webkit-box-shadow: 11px 13px 32px 16px rgba(0,0,0,0.86);
+-moz-box-shadow: 11px 13px 32px 16px rgba(0,0,0,0.86);
+box-shadow: 11px 13px 32px 16px rgba(0,0,0,0.86);
+}
 
 
 
+@media (min-width: 768px){
+    .grid__producto {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        
+        
+    }
+    
+}
 
 
+.camisa__contenido p{
+    line-height: 2rem; /*para que se lea bien el texto, separcion entre lineas*/
+    text-align: justify;
+}
+
+.grid__producto {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1 /3;
+}
+  
+ 
+
+  
+.formulario__submit {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+.formulario__submit {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color:#fff;            
+     border-radius: 10px;
+     display: block;
+     border: none;
+     grid-column: 1/3;
+   }
+.formulario__submit:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+     -webkit-box-shadow: 29px 33px 32px 10px rgba(0,0,0,0.86);
+-moz-box-shadow: 29px 33px 30px 10px rgba(0,0,0,0.86);
+box-shadow: 29px 33px 30px -9px rgba(0,0,0,0.42);
+
+font-size: 2.5rem; /*para que agrande la letra y con el transition: 0.5s; del anterior aumenta el tamaño y se ve la animacion*/
+    
+    
+   }
+  
+/*  es para hacer el borde*/
+.formulario__campo {
+
+       border: 1rem solid #8E54E9;
+       background-color: transparent;
+
+       font-family: Arial, Helvetica, sans-serif;
+       padding: 2rem;
+       appearance: none; /*para que saque la flecha que ndica para abajo*/
+       -moz-appearance: textfield;
+       
+   }
 
 
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+}
 
 
-
-
-
-
-
-
+select{
+    color: #fff;
+}
+select:focus{
+    color: #000;
+}
 
 
 

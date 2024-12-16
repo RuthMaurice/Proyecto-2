@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>productos</h1>
-    
+        <header class="header">
+            <a href="index.html">
+                <img   class="header__logo"   src="FrontEndStore_inicio/img/logo.png" alt="logotipo">
+            </a>
+        </header>
+        <nav class="navegacion">
+            <a   class="navegacion__enlace navegacion__enlace--activo"  href="index.html">Tienda</a>
+            <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        </nav>
+
+        <main class="contenedor">
+            <h1>React Js</h1>
+               <div class="camisa grid__producto">
+                <img class="camisa__imagen"  src="FrontEndStore_inicio/img/3.jpg" alt="Imegaen de producto">
+                <div class="camisa__contenido" >
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, repudiandae dolore nesciunt eos numquam debitis odio. Consequuntur expedita possimus in sapiente! Dolor quaerat alias fuga ullam inventore non, veritatis numquam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aut voluptate nam quibusdam enim nisi saepe voluptas deleniti. Saepe quam unde dolorem, suscipit deserunt harum ea? Unde consequuntur praesentium itaque.
+                    </p>
+                    <form class="formulario">
+                        <select class="formulario__campo ">
+                            <option disabled selected>  Seleccionar Talla  </option>
+                            <option >Chica</option>
+                            <option >Mediana</option>
+                            <option >Grande</option>
+                        </select>
+                        <input class="formulario__campo" type="number" placeholder="Cantidad"  min="1">   <!--mn es para que el numero minimo que se puede seleccionar sea 1--> 
+                        <input class="formulario__submit" type="submit" value="Agregar al carrito"> <!--submit es para mandar al servidor-->
+                    </form>
+                </div>
+
+                 </div> <!--fin de camisa-->
+        </main>
+        <footer class="footer">
+            <p class="footer__texto">Front end store - Todos los derechos reservados 2024</p>
+       
+        </footer>
 </body>
 </html>
